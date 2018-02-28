@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/project3.css">
+        <title>Arma Strategy</title>
+    </head>
+    <body>
+        <!--#include file="menu.shtml" -->
+        <div id="contentsection">
+            <header>
+                <img class="logo" src="assets/images/logoDark.png" alt="Thale" >
+                <img class="logowhite" src="assets/images/logoWhite.png" alt="Thale" >
+                <h1 class="pagetitle">Map Reading & Navigation</h1>
+            </header>
+            <div class="maincontent">
+                <div class="maincontenttext">
+
+                    <h1>Overview</h1>
+                    <img class="maincontentimages" src="assets/images/map_menu.jpg" alt="The World" >
+                    <p>
+                        It is very important to be able to read a map effectively
+                        so you can either locate yourself on the battlefield
+                        or mark and find a location of interest on the map.
+                        Having adept knowledge on how to use a map to your
+                        advantage is a must and can also prevent you from
+                        wandering aimlessly throughout the land if you are ever
+                        seperated from your unit.
+                    </p>
+
+                    <h2>Contour Lines:</h2>
+                    <p>
+                        These are the several lines on a map that represent
+                        the elevation of an area on a map.
+                    </p>
+
+                    <h2>Contour Interval:</h2>
+                    <p>
+                        The contour interval refers to the vertical elevation
+                        between two or more contour lines and is used to determine
+                        the slope of an area on the map.
+                    </p>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="maincontenttext">
+
+                    <h2>Five Major Terrain Features</h2>
+                    <img class="maincontentimages" src="assets/images/major_terrain_features.gif" alt="Major Terrain Features" >
+                    <h3>(Hidden Valley Ranch Salad Dressing)</h3>
+                    <ol>
+                        <li>Hill</li>
+                        <li>Valley</li>
+                        <li>Ridge</li>
+                        <li>Saddle</li>
+                        <li>Depression</li>
+                    </ol>
+                    <p>
+                        <span>Hill</span> – A raised area of land, has some elevation
+                        but not as much as a mountain.
+                    </p>
+                    <p>
+                        <span>Valley</span> – level ground that has higher ground on at least
+                        two sides. May or may not contain a stream/river.
+                    </p>
+                    <p>
+                        <span>Ridge</span> – high ground that has varying height differences
+                        along a crest. The crest is higher than the ground on all
+                        sides of the ridge.
+                    </p>
+                    <p>
+                        <span>Saddle</span> – A low point that is located in
+                        between two high points along the crest of a ridge.
+                    </p>
+
+                    <p>
+                        <span>Depression</span> – A low point on a map that
+                        has higher ground surrounding it on all sides.
+                    </p>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="maincontenttext">
+
+                    <h2>Three Minor Terrain Features</h2>
+                    <img class="maincontentimages" src="assets/images/fist_terrain_features.gif" alt="Minor Terrain Features" >
+
+                    <ol>
+                        <li>Draw</li>
+                        <li>Spur</li>
+                        <li>Cliff</li>
+                    </ol>
+                    <p>
+                        <span>Draw</span>  - ground that is surrounded by higher ground on
+                        each side and the ground slopes upward towards the head of
+                        the draw.
+                    </p>
+                    <p>
+                        <span>Spur</span> - Usually formed by two streams creating draws on both
+                        sides. A sloping line of higher ground that is usually
+                        extending out on a ridgeline.
+                    </p>
+                    <p>
+                        <span>Cliff</span>  - A severe vertical drop in elevation usually marked
+                        by very tight contour lines. Tick points towards lower ground
+                    </p>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="maincontenttext">
+                    <img class="maincontentimages" src="assets/images/azimuth_compass.gif" alt="Azimuth" >
+                    <h2>What is an Azimuth?</h2>
+                    <p>
+                        Without getting very technical with crazy terms that makes
+                        things hard to understand, think of an azimuth as an
+                        imaginary, perfectly linear line that starts at your
+                        compass and goes in the direction you are pointing. There
+                        is a number on your compass that is associated with this
+                        imaginary line and that is your azimuth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="maincontent">
+                <div class="maincontenttext">
+                    <img class="maincontentimages" id="convertazimuthimage" src="assets/images/gm_angle_map.jpg" alt="GM Angle" >
+                    <h2 id="convertazimuthheader">Converting Azimuths</h2>
+                    <div id="convertazimuthtext">
+                        <p>
+                            It is important in land navigation to know how to convert
+                            azimuths so you can effectively navigate your way through
+                            any terrain. If you need to convert any azimuth you’ll need
+                            to know something that is called the G-M angle and this is
+                            found on every map in the legend and varies based on where
+                            you are in the world. For converting from a grid azimuth to
+                            magnetic azimuth, add the value of the G-M angle to the
+                            grid azimuth. If you want to convert the other way,
+                            magnetic azimuth to grid azimuth, you simply subtract the
+                            G-M angle from the magnetic azimuth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="maincontent">
+                <div class="maincontenttext">
+                    <h2>Intersection</h2>
+                    <img class="maincontentimages" src="assets/images/intersection.jpg" alt="Intersection" >
+                    <p>
+                        <span>Intersection</span> – This method is used when you want to know
+                        the location of an unknown point on the map by using two
+                        other known points.
+                    </p>
+                    <ol>
+                        <li>First when using a map, you want to orient the map with
+                            the compass and then mark your position on the map.
+                            (If not known use resection to find your location)</li>
+                        <li>Take the magnetic azimuth of the unknown position using
+                            your compass</li>
+                        <li>Your compass gives you what is called a magnetic
+                            azimuth and the azimuth on the map is called a grid
+                            azimuth. You’ll need to convert from the magnetic
+                            azimuth to the grid azimuth.</li>
+                        <li>You will now draw a line on the map along the
+                            grid azimuth that goes through your position.</li>
+                        <li>You will now move to the second known location on the
+                            map and repeat the steps up to this step.</li>
+                        <li>The location of the unknown point is where these two
+                            lines intersect on the map. (Use more than two known
+                            locations for more accurate result but you’ll need at
+                            least two known points)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="maincontenttext">
+
+                    <h2>Resection</h2>
+                    <img class="maincontentimages" src="assets/images/resection.jpg" alt="Resection" >
+
+                    <ol>
+                        <li>Note: You will want to use the resection method when you do
+                            not know your current location on a map and need to locate
+                            your position.</li>
+                        <li>Similar to the Intersection method, you’ll want to orient
+                        the map using your compass and then identify at least two
+                        locations that you can visually see and mark them on your
+                        map.</li>
+                        <li>Convert the magnetic azimuth to the grid azimuth,
+                            then get a back azimuth using your grid azimuth.</li>
+                        <li>Draw a line on the map with the back azimuth you
+                            obtained from the known location back toward your
+                            unknown location.</li>
+                        <li>Repeat this process for the second known position.</li>
+                        <li>Where these two lines intersect is your position on the map.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="video">
+                    <h2>Intersection & Resection Video</h2>
+                    <video class="video" width="560" height="315" controls>
+                        <source src="assets/media/land_nav_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!--#include file="footer.shtml" -->
+        </div>
+
+        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/header.js"></script>
+    </body>
+</html>

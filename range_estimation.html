@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/project3.css">
+        <title>Arma Strategy</title>
+    </head>
+    <body>
+        <!--#include file="menu.shtml" -->
+        <div id="contentsection">
+            <header>
+                <img class="logo" src="assets/images/logoDark.png" alt="Thale" >
+                <img class="logowhite" src="assets/images/logoWhite.png" alt="Thale" >
+                <h1 class="pagetitle">Range Estimation/Scope Usage</h1>
+            </header>
+            <div class="maincontent">
+                <div class="maincontenttext">
+                    <img class="maincontentimages" src="assets/images/mildot.png" alt="Mildots" >
+                    <h1>Overview</h1>
+                    <p>
+                        This section will give you some general knowledge and
+                        understanding on how to use mildots for any scope.
+                        This also goes over how to quickly find a fairly accurate
+                        estimation of range if you ever find yourself without
+                        those trusty rangefinders.
+                    </p>
+                    <h2>What is a mildot?</h2>
+                    <p>
+                        First things first, a “mildot” is an abbreviation for
+                        milliradian also known as an MRAD or mil for short.
+                        A milliradian accounts for 1/1000 of a radian.
+                    </p>
+
+                    <h2>What is a radian?</h2>
+                    <p>
+                        A radian is a unit of angle that is located at the center
+                        of a circle and its arc is equal in length to the radius of
+                        the circle. Essentially, this is the distance that is
+                        traveled around the circle.
+                    </p>
+                </div>
+            </div>
+
+            <div class="maincontent">
+                <div class="maincontenttext">
+                    <img class="maincontentimages" src="assets/images/radians.jpg" alt="Radians" >
+                    <h2>Mathematical Basics</h2>
+                    <p>
+                        It has been argued about how many milliradians are in a
+                        complete circle. The Russian army says there are 6,000
+                        milliradians in a circle while the US Army says a circle
+                        has 6,400 milliradians for some unknown reason.
+                    </p>
+
+                    <p>
+                        Pi is half of a circle which is equal to 3.14159265359
+                        radians so multiply that by 2 and you get 6.28318530718
+                        radians, so in milliradians that would be approximately,
+                        6,283 milliradians in a circle. We’re just going to round
+                        for easier math.
+                    </p>
+                </div>
+            </div>
+
+            <div class="maincontent">
+                <div class="maincontenttext">
+
+                    <h2>Rapid Range Estimation Trick</h2>
+                    <img class="maincontentimages" src="assets/images/mil_ranging.jpg" alt="Range Formula" >
+                    <p>
+                        What you need to do first is look down your scope,
+                        zoom in as much as your scope will let you if at all
+                        possible, then you need to estimate the height of your
+                        target in meters, multiply that number by 1000. We will
+                        call this number X. Now what you need to do is use any
+                        one of the scope techniques I talked about earlier to find
+                        the height of your target in mildots. Once you have that
+                        number, divide your number X by the mildot height of your
+                        target. This will give a rough estimation of the distance
+                        to your target.
+                    </p>
+                    <p>
+                    <strong>Example:</strong>
+                    <p>
+                    <ol>
+                        <li>Target is 1.8 meters tall (average height of an adult male)</li>
+                        <li>1.8 x 1000 = 1800</li>
+                        <li>Target is 3 mildots high</li>
+                        <li>1800/3 = 600 yards to target</li>
+                    </ol>
+
+                    <p>
+                        Note: On a traditional scope the reticle will look like a
+                        series of mildots going perfectly vertically and
+                        horizontally through the scope. The distance between these
+                        dots is equal to exactly 1 mil. On the right are a few
+                        more examples on how to find range with different units
+                        of measurement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="maincontent">
+                <div class="maincontenttext">
+                    <img class="maincontentimages" src="assets/images/mildot_adjustment.jpg" alt="Mildot Adjustment" >
+                    <h2>Quick Tip For Using Mildots</h2>
+                    <p>
+                        So when you are looking through the scope, you can use the
+                        mildots for quick adjustment to a target. Say you have to
+                        adjust up 2 mildots for a target at a distance. Instead of
+                        making a certain amount of clicks to your scope to
+                        accommodate for the distance, you can simply put the second
+                        mildot below the crosshairs on the target and you should be
+                        able to hit the target. This isn’t as accurate as using
+                        clicks on the scope but is still a fast and effective
+                        technique to use in a pinch.
+                    </p>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="video">
+                    <h2>Range Estimation & Mildot Demonstration</h2>
+                    <video class="video" width="560" height="315" controls>
+                        <source src="assets/media/range_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!--#include file="footer.shtml" -->
+        </div>
+
+        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/header.js"></script>
+    </body>
+</html>

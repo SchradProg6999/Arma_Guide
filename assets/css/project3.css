@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+/*font-family: 'Droid Sans', sans-serif;*/
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-size: 175%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 3%;
+    padding-top: 2%;
+    color: #8fb47d;
+    text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.9);
+    transform: translateX(-60px);
+}
+
+header h1{
+    margin: 0;
+    display: inline-block;
+}
+
+/*HOMEPAGE SPECIFIC CSS STARTS HERE*/
+
+.homepageimages img{
+    width: 500px;
+    height: 300px;
+    filter:grayscale(75%);
+    -webkit-transition: filter 1s linear;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.homepageimages p{
+    font-size: 200%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.homepageimages div{
+    position: relative;
+}
+
+.homepageimages{
+    margin-right: 1%;
+    margin-bottom: 1%;
+    transform: translateY(0px);
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.homepageimages:hover img{
+	filter: none;
+ 	-webkit-transition: filter .3s linear;
+}
+
+.homepageimages:hover{
+    transform: translateY(-5px);
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+#homepagebackground{
+    background: url(../images/page_background.jpg) no-repeat center center;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: cover;
+}
+
+#homebutton{
+    display: none;
+}
+
+#homepageimages{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#homepagemenu{
+    display: none;
+}
+
+/*CSS FOR THE TACTICAL FORMATIONS BUTTON ON HOMEPAGE*/
+
+#formationsbutton{
+    transform: translateY(calc(100% + 5.5%));
+    transition-property: transform;
+    transition-duration: .3s;
+    -moz-transform: translateY(calc(100%));
+}
+
+#formationsbutton:hover{
+    transform: translateY(calc(100% + 6% - 5px));
+    transition-property: transform;
+    transition-duration: .3s;
+    -moz-transform: translateY(calc(100% - 5px));
+}
+
+/*MENU SPECIFIC CSS STARTS HERE*/
+
+.menu{
+    top: 0;
+    height: 100%;
+    width: 15%;
+    float:left;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.menu::-webkit-scrollbar{
+    display: none;
+}
+
+.menuimages img {
+    width: 9vw;
+    max-width: 192px;
+    height: 5.6vw;
+    max-height: 115px;
+    filter:grayscale(75%);
+    border: 1px solid lightgrey;
+    transform: translateX(0px);
+    -webkit-transition: filter 1s linear;
+    transition-property: filter, transform;
+    transition-duration: .3s, .3s;
+
+}
+
+.menuimages:hover img{
+	filter: none;
+    transform: translateX(10px);
+     -webkit-transition: filter .3s linear;
+    transition-property: filter, transform;
+    transition-duration: .3s, .3s;
+}
+
+#lastmenuoption{
+    margin-bottom: 30px;
+}
+
+#menu-sep{
+    display: none;
+}
+
+/*MAIN CONTENT CSS*/
+
+.maincontent{
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    overflow: auto;
+    margin-bottom: 2%;
+    border-radius: 2px;
+}
+
+#contentsection{
+    background: url(../images/page_background.jpg) no-repeat center center;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: cover;
+    position: relative;
+    width: 85%;
+    margin: 0;
+    margin-left: 15%;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#maincontent-sep{
+    height: 80px;
+}
+
+.maincontent span{
+    font-weight: bolder;
+}
+
+.maincontent li{
+    margin-top: 10px;
+}
+
+.maincontent h2{
+    margin-top: 25px;
+    color: #769666;
+    border-bottom: 2px solid #634639;
+    width: 50%;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.maincontent h1{
+    color: #769666;
+    border-bottom: 2px solid #634639;
+    width: 50%;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.maincontenttext{
+    display: inline-block;
+    width: 100%;
+    font-size: 125%;
+}
+
+.maincontentimages{
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 450px;
+}
+
+/*GENERIC VIDEO CSS*/
+.video{
+    width: 560px;
+    margin: auto;
+}
+
+/*NAVIGATION/MAP PAGE SPECIFIC CSS*/
+
+#convertazimuthimage{
+    margin: 0%;
+    margin-right: 15%;
+    padding: 0;
+    margin-left: 5%;
+}
+
+/*RANGE ESTIMATION SPECIFIC CSS*/
+
+/*TACTICAL FORMATION SPECIFIC CSS*/
+
+#staggeredcolumnimage{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#staggeredcolumntext{
+    width: 60%;
+}
+
+#fileformationimage{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#formationvideo{
+    font-size: 125%;
+}
+
+/*COMBAT STRATEGIES SPECIFIC CSS*/
+
+#indirectfire{
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 400px;
+}
+
+.resourcelinks{
+    color: blue;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.resourcelinks:hover{
+    background-color: grey;
+}
+
+/*CSS FOR LOGO*/
+
+#logohomepage{
+    width: 100px;
+    display: inline-block;
+    margin-right: 20px;
+    transform: translateY(30%);
+}
+
+.logo{
+    width: 100px;
+    margin-right: 20px;
+    transform: translateY(30%);
+}
+
+.logowhite{
+    display:none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menutext p{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+/*FOOTER (INCLUDES RESOURCES BUTTON CSS)*/
+
+footer{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 85%;
+    height: 50px;
+    margin-left: 6.885%;
+    padding: 10px;
+    margin-top: 20px; /*FIX MARGIN FOR FOOTER*/
+}
+
+/*RESOURCES BUTTON*/
+.resources{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: grey;
+    border-radius: 10%;
+}
+
+#resourcebutton{
+    position: fixed;
+    top: 102px;
+    right: 50px;
+}
+
+
+
+/*CSS FOR IMAGES CONTAINED IN MAIN CONTENT SECTION*/
+
+.contentimages{
+    width: 40%;
+    float: right;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1022px){
+    .maincontentimages{
+        max-width: 300px;
+    }
+
+}
+/*SEPERATE MEDIA QUERY FOR TRANSFER IMAGES ON HOMEPAGE TO BE NORMAL*/
+@media screen and (max-width: 1570px){
+    #formationsbutton{
+        transform: translateY(0);
+        transition-property: transform;
+        transition-duration: .3s;
+    }
+
+    #formationsbutton:hover{
+        transform: translateY(-5px);
+        transition-property: transform;
+        transition-duration: .3s;
+    }
+}
+
+
+/*TAKES AWAY LINK ON FIG CAPTION ONLY WHILE NOT IN MOBILE MODE*/
+@media screen and (min-width: 769px){
+    .menutext{
+        pointer-events: none;
+        cursor: default;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+/*Mobile Media Query starts here*/
+
+@media screen and (max-width: 768px){
+
+    .pagetitle{
+        padding:0;
+        margin: 0;
+        font-size: 125%;
+    }
+
+    header{
+        position: fixed;
+        font-size: 20px;
+        top: 0;
+        text-align: center;
+        background-color: #5c5c5c;
+        width: 100%;
+        margin-left: 0;
+        padding: .8%;
+        text-shadow: none;
+        transform: none;
+    }
+
+    /*Homepage Mobile CSS*/
+    .homepageimage{
+        margin: 0;
+    }
+
+    #homepageheader{
+        display:none;
+        width: 100%;
+        height: auto;
+    }
+
+    /*Mobile logo CSS*/
+    .logo{
+        display: none;
+    }
+
+    .logowhite{
+        width: 35px;
+        margin-right: 20px;
+        transform: translateY(5%);
+        display: inline-block;
+    }
+
+    /*MAIN CONTENT IMAGES MOBILE*/
+    .maincontentimages{
+        max-width: 90%;
+        float: none;
+        margin: 0;
+    }
+
+    /*MAIN CONTENT TEXT*/
+    .maincontenttext{
+        text-align: center;
+    }
+
+    .maincontenttext h2, .maincontenttext h1{
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    /*NAVIGATION MENU CSS MOBILE*/
+    .menu{
+        display: inline-block;
+        position: fixed;
+        float: none;
+        width: 100%;
+        height: 40vw;
+        margin-left: 0;
+        top: 75px;
+        padding-top: 1.8%;
+        z-index: 1;
+    }
+
+    .menuimages{
+        display: none;
+    }
+
+    .menutext{
+        display: inline;
+        pointer-events: all;
+    }
+
+    #menu-sep{
+        display: block;
+        height: 45vw;
+    }
+
+    .menutext p{
+        text-align: center;
+        display: inline-block;
+        color: lightgrey;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        background-color: #606060;
+        border-radius: 2px;
+        margin-bottom: 2%;
+        margin-right: .5%;
+        font-size: 4vw;
+    }
+
+    h2{
+        margin: 0;
+        font-size: 20px;
+        padding-bottom: 1%
+    }
+
+    #contentsection{
+        margin:0;
+        width: 100%;
+    }
+
+    /*CSS TO FIX FORMATIONS BUTTON ON MOBILE*/
+    #formationsbutton{
+        transform: translateY(0);
+    }
+
+    #formationsbutton:hover{
+        transform: translateY(-5px);
+    }
+
+    /*Mobile Footer CSS*/
+    footer{
+        width: 85%;
+        margin: auto;
+    }
+
+    #homepagefooter{
+        margin-left: 0%
+    }
+
+    /*VIDEO CSS FOR MOBILE*/
+
+    .video{
+        width: 100%;
+    }
+
+    .video iframe{
+        width: 100%;
+    }
+}

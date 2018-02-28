@@ -1,0 +1,14 @@
+<div class="menu">
+    <h2>MENU</h2>
+    <a class="menuimages" href="index.html"><img src="assets/images/page_background.jpg" alt="Home" ></a>
+    <a class="menutext" href="index.html"><p>Return to Base</p></a>
+    <a class="menuimages" href="navigation.html"><img src="assets/images/map_menu.jpg" alt="navigation" ></a>
+    <a class="menutext" href="navigation.html"><p>Map Reading & Navigation</p></a>
+    <a class="menuimages" href="range_estimation.html"><img src="assets/images/range_estimation_image.jpg" alt="range_estimation" ></a>
+    <a class="menutext" href="range_estimation.html"><p>Range Estimation & Scope Usage</p></a>
+    <a class="menuimages" href="tactical_formations.html"><img src="assets/images/tactical_formations_image.jpg" alt="tactical_formations" ></a>
+    <a class="menutext" href="tactical_formations.html"><p>Tactical Formations</p></a>
+    <a class="menuimages" href="combat_strategies.html"><img src="assets/images/combat_strategies_image.jpg" alt="combat_strategies" ></a>
+    <a class="menutext" href="combat_strategies.html"><p>Combat Strategies</p></a>
+</div>
+<div id="menu-sep"></div>
